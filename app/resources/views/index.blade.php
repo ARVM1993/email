@@ -2,7 +2,7 @@
 @section("title", "cursos")
 
 
-@section("content")
+@section("main")
 <h1>Bienvenido a la pagina principal de cursos</h1>
 
 

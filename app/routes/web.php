@@ -11,7 +11,7 @@ Route::get('/', homeController::class);
 
 Route::controller(CursoController::class)
 ->group(function(){
-    Route::get('cursos',  "index");
+    Route::get('cursos', "index");
 
     Route::get("cursos/create", "create");
     
@@ -21,7 +21,7 @@ Route::controller(CursoController::class)
 
 
 Route::get('contactanos', function () {
-    Mail::to('4f3c605350-ae6bf3@inbox.mailtrap.io')  // Usa la dirección de prueba de Mailtrap
+    Mail::to('aitor.ruiz@fake.es')  // Usa la dirección de prueba de Mailtrap
         ->send(new ContactanosMailable());
     return 'Correo de prueba enviado a Mailtrap';
 });

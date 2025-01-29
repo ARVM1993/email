@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield("title", "Titulo")</title>
-    @stack('styles') <!-- Aquí se inyectan los estilos de cada vista -->
+    @stack('styles') <!-- Recordatorio: Aquí es para inyectar los estilos de cada vista -->
 
 </head>
 <style>
@@ -65,8 +65,6 @@
     </main>
     <footer>
         <p>@yield("footer", "Todos los derechos reservados")</p>
-    </footer>
-
-    
+    </footer>    
 </body>
 </html>
